@@ -51,19 +51,22 @@ function createMap(Earthquakes) {
 //geometry.coordinates[2]
       // Conditionals for country gdp_pc
     let color = "";
-    if (earthquake.geometry.coordinates[2] > 9) {
-        color = "#0d010f";
+    if (earthquake.geometry.coordinates[2] > 110) {
+        color = "#26B63C";
     }
-    else if (earthquake.geometry.coordinates[2] > 7) {
+    else if (earthquake.geometry.coordinates[2] > 90) {
+      color = "#581766";
+  }
+    else if (earthquake.geometry.coordinates[2] > 70) {
         color = "#581766";
     }
-    else if (earthquake.geometry.coordinates[2] > 5) {
+    else if (earthquake.geometry.coordinates[2] > 50) {
         color = "#693934";
     }
-    else if (earthquake.geometry.coordinates[2] > 3) {
+    else if (earthquake.geometry.coordinates[2] > 30) {
         color = "#ab2316";
     }
-    else if (earthquake.geometry.coordinates[2] > 1) {
+    else if (earthquake.geometry.coordinates[2] > 10) {
             color = "#d68d06";
     }
     else {
@@ -74,8 +77,8 @@ function createMap(Earthquakes) {
         let quake = L.circle([latitude, longitude], {
         color: color,
         fillColor: color,
-        fillOpacity: 0.75,
-        radius: 20000 * earthquake.properties.mag  
+        fillOpacity: 0.25,
+        radius: earthquake.properties.mag**3 * 1500
       })
         .bindPopup("<h3>Location of earthquake: " + earthquake.properties.place + "<h3><h3> Depth of earthquake: " + earthquake.geometry.coordinates[2]+ "m<h3><h3> Magnitude of earthquake: " + earthquake.properties.mag);
   

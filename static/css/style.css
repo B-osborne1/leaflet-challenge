@@ -8,3 +8,30 @@ body,
 html {
   height: 100%;
 }
+#legend {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  background: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+}
+
+.legend-box {
+  width: 20px; /* Adjust as needed */
+  height: 20px; /* Adjust as needed */
+  margin-right: 5px;
+  border: 1px solid black; /* Add border style as needed */
+}
+
+.legend-label {
+  flex-grow: 1;
+}

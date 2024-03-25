@@ -14,13 +14,45 @@
 
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
 </head>
 
 <body>
 
   <!-- The div that holds our map -->
-  <div id="map"></div>
+  <div id="map">
+    <div id="legend">
+      <div class="legend-row">
+        <div class="legend-box" style="background-color: #d6d606;"></div> 
+        <div class="legend-label">Depth < 10m</div>
+    </div>
+    <div class="legend-row">
+        <div class="legend-box" style="background-color: #d68d06;"></div> 
+        <div class="legend-label">Depth 10-30m</div>
+    </div>
+    <div class="legend-row">
+      <div class="legend-box" style="background-color: #ab2316;"></div> 
+      <div class="legend-label">Depth 30-50m</div>
+    </div>
+    <div class="legend-row">
+      <div class="legend-box" style="background-color: #693934;"></div> 
+      <div class="legend-label">Depth 50-70m</div>
+    </div>
+    <div class="legend-row">
+      <div class="legend-box" style="background-color: #581766;"></div> 
+      <div class="legend-label">Depth 70-90m</div>
+    </div>
+    <div class="legend-row">
+      <div class="legend-box" style="background-color: #000000;"></div> 
+      <div class="legend-label">Depth 90-110m</div>
+    </div>
+    <div class="legend-row">
+      <div class="legend-box" style="background-color: #26B63C;"></div> 
+      <div class="legend-label">Depth >110m</div>
+    </div>
 
+    </div>
+  </div>
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
