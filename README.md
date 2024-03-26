@@ -6,6 +6,9 @@ The layout of the repo is as follows:
 1) Index- the html responsible for the visualisation
 2) Static folder- contains both the css and js scripts
 
-References:
+## References:
 1) Creating a legend video: https://www.youtube.com/watch?v=Fz5SywxI06M - Mapster 2023
     - The CSS for the legend was supported by AI
+  
+## Pages:
+1) The HTML file is visible through the pages section of the repo
